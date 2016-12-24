@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+	  <meta charset="utf-8" />
+		<title>info</title>
+	  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Sans">
+	  <style type="text/css">
+		body 		{font-family:serif; background-image:url("images/recBkgd3.png");}
+		h1  		{text-transform:uppercase; text-shadow: 2px 2px 5px #eddbab; margin-left:32px;  width:740px;
+						padding-right:5px; padding-left:55px; color:#ffffff; text-align:center;}
+		h3			{color:#ffffff;}
+		h4			{font-family:sans-serif; padding:5px; font-weight:normal; color:#ffffff;}
+		label 		{display:block; color:#ffffff;}
+		input, textarea  {margin-bottom:15px; background-color: #ffffff; resize: none; width:280px;}
+		fieldset 	{margin-bottom:10px; padding:20px 15px 35px 30px; background-image:url("images/vinyl.png"); width:920px;
+						background-position:bottom right, top left; margin:72px auto;}
+		.gender input, .gender label 		{display:inline; width:20px;}
+		.toon-type input, .toon-type label 	{display:inline; width:20px;}
+		.sec		{width:200px;}
+		span		{font-style:italic; color:rgba(124,124,124,0.9);}
+		p			{font-family:"Josefin Sans", sans-serif; text-indent:40px; font-size:20px; 
+						font-weight:bold; color:#ffffff;}
+		.navClover	{float:right;}
+		
+	  </style>	
+	</head>
+	<body>
+	  <form method="post" action="mailto:rickwilmeth@rocketmail.com" enctype="text/plain" autocomplete="on">
+		<fieldset> 
+		  <p>Please, take a few seconds to join our mailing list.
+			We will send you notice of future sales and all special events.</p>
+			<h1></h1>
+		  <h4>Asterisked (<span style="color:#ff0000"> * </span>) fields required</h4>
+			<label for="given-name"><span style="color:#ff0000">*</span>First Name:</label>
+			<input type="text" id="given-name" name="given-name" required="required" autofocus="autofocus" /> 		
+			<label for="family-name"><span style="color:#ff0000">*</span>Last Name:</label>
+			<input type="text" id="family-name" name="family-name" required="required" /> 
+			<label for="email"><span style="color:#ff0000">*</span>Email:</label>
+			<input type="email" id="email" name="email" placeholder=" valid email address" 
+				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="required" />
+			<label for="address">Mailing Address:</label> 
+			<textarea id="address" name="address" rows="5" placeholder=" Full mailing address"></textarea>
+			<label for="phone">Telephone:</label> 
+			<input type="tel" id="phone" name="phone" placeholder=" area code + phone no." />
+			<label for="dob">Date of Birth:</label>
+			<input type="date" id="dob" name="dob" />
+		  <div class="gender"> <br />
+			<label for="female">Gender <span></span>: </label>
+			<input type="radio" id="female" name="gender" value="female"> 
+			<label for="female">Female</label> 
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label> 
+		  </div>
+		  <div class="toon-type"> 
+			<label for="tank">Interested in: </label>
+			<input type="checkbox" id="tank" name="toontype" value="tank"> 
+			<label for="tank">New</label> 
+			<input type="checkbox" id="dps" name="toontype" value="dps">
+			<label for="dps">Used</label> 
+			<input type="checkbox" id="healer" name="toontype" value="healer"> 
+			<label for="healer">Vintage</label>
+		  </div> 
+		  <h3>Security Question:</h3>
+		  <div class="sec">
+			<label for="what"><span style="color:#ff0000">*</span>What is your favorite color?</label><br />
+			<input type="color" id="what" name="what" /><br /><br />
+		  </div>
+		  <button type=reset>Reset</button>
+		  <button type=submit>Send</button> 
+		  <br /><br /><br /><br />
+		  <h1>Thank you!</h1>
+		  <div class="navClover">
+		    <img src="images/fourLeaf2.png" width="209" height="172" alt="navClover" usemap="#clovermap">
+		    <map name="clovermap">
+			  <area shape="rect" coords="72,28, 114,50" href="HomePage.html" alt="home" />
+			  <area shape="rect" coords="141,56, 183,77" href="product.html" alt="shop" />
+			  <area shape="rect" coords="58,95, 94,114" href="info.html" alt="info" />
+			  <area shape="rect" coords="116,123, 166,141" href="about.html" alt="about" />
+		    </map>
+		  </div>
+		</fieldset>
+	  </form>
+	</body>
+</html>

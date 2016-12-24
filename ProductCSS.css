@@ -1,0 +1,32 @@
+body { background-image: url("Images/recBkgd3.png");
+}
+
+.ColLeft { float: left;
+		   width: 25%;
+		   height: 500px;
+		   margin-left: 20px;
+		   background-color: #ffffff;
+		   border: #000000 solid 4px;
+}
+
+.ColMiddle { border: #000000 solid 4px;
+			 background-color: #ffffff;
+			 float: left;
+			 width: 25%;
+			 height: 500px;
+			 margin-left: 150px;
+			 margin-right: 150px;
+	
+}
+
+.ColRight { border: #000000 solid 4px;
+			background-color: #ffffff;
+			float: left;
+			width: 25%;
+			height: 500px;
+}
+
+
+.NewCover, .RetroCover { 
+			padding-top: 20px;
+}
